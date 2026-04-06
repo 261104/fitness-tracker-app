@@ -1,0 +1,24 @@
+# Node
+server/node_modules/
+server/.env
+
+# Flutter build
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/test_app/
+
+# Android build
+mobile/android/build/
+mobile/android/app/build/
+mobile/android/.gradle/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

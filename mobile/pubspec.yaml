@@ -1,0 +1,38 @@
+name: fitness_freak
+description: Fitness Freak — Android fitness tracker MVP (steps, workouts, stats, running).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_riverpod: ^2.6.1
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  google_sign_in: ^6.3.0
+  cloud_firestore: ^5.6.12
+  pedometer: ^4.0.2
+  health: ^12.0.1
+  permission_handler: ^11.3.1
+  geolocator: ^13.0.2
+  activity_recognition_flutter: ^6.0.0
+  http: ^1.2.2
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  uuid: ^4.5.1
+  shared_preferences: ^2.3.3
+  flutter_timezone: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

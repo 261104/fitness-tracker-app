@@ -1,0 +1,35 @@
+Fitness Freak — setup (Android MVP)
+===================================
+
+1) Firebase
+   - Create a Firebase project; add an Android app with package name: com.fitnessfreak.fitness_freak
+   - Download google-services.json and replace mobile/android/app/google-services.json
+   - Run: dart pub global activate flutterfire_cli
+     flutterfire configure --project=<your-project>
+     (overwrites lib/firebase_options.dart with real keys)
+   - Enable Authentication > Google sign-in; add SHA-1/256 from your debug keystore in Firebase console
+   - Create Firestore database; suggested rules for dev (tighten for production):
+     rules_version = '2';
+     service cloud.firestore {
+       match /databases/{database}/documents {
+         match /users/{userId}/{document=**} {
+           allow read, write: if request.auth != null && request.auth.uid == userId;
+         }
+       }
+     }
+
+2) Flutter app
+   cd mobile
+   flutter pub get
+   flutter run
+   - API URL: default http://10.0.2.2:3000 for Android emulator.
+     Physical device: flutter run --dart-define=API_BASE=http://<your-lan-ip>:3000
+
+3) PostgreSQL + API
+   cd server
+   npm install
+   copy .env.example to .env and set DATABASE_URL
+   psql $DATABASE_URL -f db/schema.sql
+   npm start
+
+Security note: the Node API decodes Firebase ID tokens without cryptographic verification for local development. For production, verify tokens with firebase-admin and your service account.
