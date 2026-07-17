@@ -10,4 +10,16 @@ Fitness Freak is a clean, modern Android fitness tracker MVP built with Flutter 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/261104/fitness-tracker-app/tree/master/0001-two-sum) |
+## Math
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/261104/fitness-tracker-app/tree/master/0070-climbing-stairs) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/261104/fitness-tracker-app/tree/master/0070-climbing-stairs) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/261104/fitness-tracker-app/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
